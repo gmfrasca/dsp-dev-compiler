@@ -7,6 +7,12 @@ Development tool for compiling KFP/DSP Pipelines
 This Compiler Generates PipelineIR JSON and ArgoWFs from a given input Python package and Pipeline Definition Name
 
 
+### Installation
+This largely can be used as-is.
+
+However, because this is intended for developers, there is a line in go.mod:
+`replace github.com/kubeflow/pipelines v0.0.0-20240613070908-b57f9e858880 => /home/gfrasca/src/data-science-pipelines`, which points to the local source for DSP such that you can update and debug the internal IR Compiler dynamically.   Adjust the directory pointer accordingly (#TODO: show how to do this using appropriate `go` commands instead)
+
 ### Execution
  
 To use this, follow these steps:
