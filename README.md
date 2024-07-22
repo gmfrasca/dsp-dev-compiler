@@ -43,3 +43,6 @@ go run . \
 
 Adjust the parameter values to your needs
 
+
+### Disclaimer
+No input validation is provided, and as we are executing pipelines files directly this is inherently not safe for any form of live/production use.  For Local Development purposes only.
